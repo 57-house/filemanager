@@ -44,7 +44,7 @@ jobs:
       with:
         server: ${{ secrets.AMERICA_FTP_SERVER }}
         username: ${{ secrets.AMERICA_FTP_USER }}
-        password: ${{ secrets.AMERICA_FTP_PASS }}
+        password: ${{ secrets.AMERICA_FTP_PASS }} 
         exclude: |
           **/.git*
           **/.git*/**
