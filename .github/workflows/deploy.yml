@@ -42,9 +42,9 @@ jobs:
     - name: FTP-Deploy-Action-In-America
       uses: SamKirkland/FTP-Deploy-Action@4.3.0
       with:
-        server: ${{ secrets.AMERICAN_FTP_SERVER }}
-        username: ${{ secrets.AMERICAN_FTP_USER }}
-        password: ${{ secrets.AMERICAN_FTP_PASS }}
+        server: ${{ secrets.AMERICA_FTP_SERVER }}
+        username: ${{ secrets.AMERICA_FTP_USER }}
+        password: ${{ secrets.AMERICA_FTP_PASS }}
         exclude: |
           **/.git*
           **/.git*/**
