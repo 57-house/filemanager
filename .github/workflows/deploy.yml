@@ -11,10 +11,10 @@ jobs:
     - uses: actions/checkout@v2.1.0
       with:
         fetch-depth: 2
-    - name: FTP-Deploy-Action
+    - name: FTP-Deploy-Action-In-Asia
       uses: SamKirkland/FTP-Deploy-Action@4.3.0
       with:
-        server: ${{ secrets.CDI_SERVER }}
+        server: ${{ secrets.ASIA_FTP_SERVER }}
         username: ${{ secrets.ASIA_FTP_USERNAME }}
         password: ${{ secrets.ASIA_FTP_PASSWORD }}
         exclude: |
@@ -25,12 +25,40 @@ jobs:
     - uses: actions/checkout@v2.1.0
       with:
         fetch-depth: 2
-    - name: FTP-Deploy-Action
+    - name: FTP-Deploy-Action-In-Africa
       uses: SamKirkland/FTP-Deploy-Action@4.3.0
       with:
-        server: ${{ secrets.CDI_SERVER }}
-        username: ${{ secrets.ASIA_FTP_USERNAME }}
-        password: ${{ secrets.ASIA_FTP_PASSWORD }}
+        server: ${{ secrets.AFRICAN_FTP_SERVER }}
+        username: ${{ secrets.AFRICAN_FTP_USERNAME }}
+        password: ${{ secrets.AFRICAN_FTP_PASS }}
+        exclude: |
+          **/.git*
+          **/.git*/**
+          **/node_modules/**
+          **/vendor/**
+    - uses: actions/checkout@v2.1.0
+      with:
+        fetch-depth: 2
+    - name: FTP-Deploy-Action-In-America
+      uses: SamKirkland/FTP-Deploy-Action@4.3.0
+      with:
+        server: ${{ secrets.AMERICAN_FTP_SERVER }}
+        username: ${{ secrets.AMERICAN_FTP_USERNAME }}
+        password: ${{ secrets.AMERICAN_FTP_PASS }}
+        exclude: |
+          **/.git*
+          **/.git*/**
+          **/node_modules/**
+          **/vendor/**
+    - uses: actions/checkout@v2.1.0
+      with:
+        fetch-depth: 2
+    - name: FTP-Deploy-Action-In-Europe
+      uses: SamKirkland/FTP-Deploy-Action@4.3.0
+      with:
+        server: ${{ secrets.EUROPEAN_FTP_SERVER }}
+        username: ${{ secrets.EUROPEAN_FTP_USERNAME }}
+        password: ${{ secrets.EUROPEAN_FTP_PASS }}
         exclude: |
           **/.git*
           **/.git*/**
