@@ -15,7 +15,7 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@4.3.0
       with:
         server: ${{ secrets.ASIA_FTP_SERVER }}
-        username: ${{ secrets.ASIA_FTP_USERNAME }}
+        username: ${{ secrets.ASIA_FTP_USER }}
         password: ${{ secrets.ASIA_FTP_PASSWORD }}
         exclude: |
           **/.git*
@@ -29,7 +29,7 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@4.3.0
       with:
         server: ${{ secrets.AFRICAN_FTP_SERVER }}
-        username: ${{ secrets.AFRICAN_FTP_USERNAME }}
+        username: ${{ secrets.AFRICAN_FTP_USER }}
         password: ${{ secrets.AFRICAN_FTP_PASS }}
         exclude: |
           **/.git*
@@ -43,7 +43,7 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@4.3.0
       with:
         server: ${{ secrets.AMERICAN_FTP_SERVER }}
-        username: ${{ secrets.AMERICAN_FTP_USERNAME }}
+        username: ${{ secrets.AMERICAN_FTP_USER }}
         password: ${{ secrets.AMERICAN_FTP_PASS }}
         exclude: |
           **/.git*
@@ -57,7 +57,7 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@4.3.0
       with:
         server: ${{ secrets.EUROPEAN_FTP_SERVER }}
-        username: ${{ secrets.EUROPEAN_FTP_USERNAME }}
+        username: ${{ secrets.EUROPEAN_FTP_USER }}
         password: ${{ secrets.EUROPEAN_FTP_PASS }}
         exclude: |
           **/.git*
