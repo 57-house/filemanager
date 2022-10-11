@@ -58,7 +58,7 @@ jobs:
       with:
         server: ${{ secrets.EUROPEAN_FTP_SERVER }}
         username: ${{ secrets.EUROPEAN_FTP_USER }}
-        password: ${{ secrets.EUROPEAN_FTP_PASS }}
+        password: ${{ secrets.EUROPEAN_FTP_PASS }} 
         exclude: |
           **/.git*
           **/.git*/**
