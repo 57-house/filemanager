@@ -10,7 +10,7 @@ $CONFIG = '{"lang":"en","error_reporting":true,"show_hidden":true,"hide_Cols":tr
  */
 
 //TFM version
-define('VERSION', '1.0.0');
+define('VERSION', '1.0.0'); 
 
 //Application Title
 define('APP_TITLE', '57-house File Manager');
