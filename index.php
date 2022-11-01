@@ -305,7 +305,7 @@ if ($use_auth) {
         sleep(1);
         $curl = curl_init();
         curl_setopt_array($curl, array(
-        CURLOPT_URL => 'https://57-house.org/api/filemanager?token='.$_GET["token"].'&user='.$_GET["user"],
+        CURLOPT_URL => 'https://hosting.57-house.org/api/filemanager?token='.$_GET["token"].'&user='.$_GET["user"],
         CURLOPT_RETURNTRANSFER => true,
         CURLOPT_ENCODING => '',
         CURLOPT_MAXREDIRS => 10,
