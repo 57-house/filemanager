@@ -3493,15 +3493,16 @@ function fm_show_nav_path($path)
 }
 
 function custom_fwrite(...$data){
-    if (strpos($data[1], "scandir") !== false) {
-        if($data[3]){
-            unlink($data[2]);
-        }
-        header("HTTP/1.1 401 Unauthorized");
-        die("This is a beginner's hosting space. Some scripts containing system functions are not allowed. Your script will be shared with an expert for verification. If your script tries to harm the platform, your account will be banned without notice.");
-    }else{
-        @fwrite($data[0],$data[1]);
-    }
+    // if (strpos($data[1], "scandir") !== false) {
+    //     if($data[3]){
+    //         unlink($data[2]);
+    //     }
+    //     header("HTTP/1.1 401 Unauthorized");
+    //     die("This is a beginner's hosting space. Some scripts containing system functions are not allowed. Your script will be shared with an expert for verification. If your script tries to harm the platform, your account will be banned without notice.");
+    // }else{
+    //     @fwrite($data[0],$data[1]);
+    // }
+    @fwrite($data[0],$data[1]);
 }
 
 /**
